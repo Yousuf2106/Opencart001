@@ -43,10 +43,5 @@ public class TC002_LoginTest extends BaseClass {
 		}
 		logger.info("******* Finished TC002_LoginTest ********");
 		
-				
-		
-		
-		
-		
 	}
 }

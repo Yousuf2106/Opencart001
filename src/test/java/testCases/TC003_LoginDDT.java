@@ -12,19 +12,14 @@ import utilities.DataProviders;
 /*
 Data is valid  -  login success  -  test pass  -  logout
 Data is valid  --  login failed  -  test fail
-
 Data is invalid  -  login success  -  test fail  -  logout
 Data is invalid  --  login failed  -  test pass
 */
 
-
 public class TC003_LoginDDT extends BaseClass {
-	
-	
 	@Test(dataProvider="LoginData", dataProviderClass=DataProviders.class,groups="DataDriven")//getting data provider from different class
 	public void LoginDDT(String email, String pwd, String exp)
 	{
-		
 		logger.info("**** Starting TC003_LoginDDT ****");
 		try
 		{
@@ -49,13 +44,11 @@ public class TC003_LoginDDT extends BaseClass {
 			{
 				macc.clickLogout();
 				Assert.assertTrue(true);
-				
 			}
 			else
 			{
 				Assert.assertTrue(false);
 			}
-			
 		}
 		if(exp.equalsIgnoreCase("Invalid"))
 		{
@@ -63,23 +56,17 @@ public class TC003_LoginDDT extends BaseClass {
 			{
 				macc.clickLogout();
 				Assert.assertTrue(false);
-				
 			}
 			else
 			{
 				Assert.assertTrue(true);
-			}
-				
+			}	
 	    }
 		}
 		catch(Exception e)
 		{
 			Assert.fail();
 		}
-		
 		logger.info("**** Finished TC003_LoginDDT ****");
-		
-		
 	}
-
 }

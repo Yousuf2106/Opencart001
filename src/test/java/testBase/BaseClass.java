@@ -96,9 +96,6 @@ public class BaseClass {
 			default : System.out.println("Invalid browser name.."); return;
 			}
 		}
-		
-		
-		
 	    driver.manage().deleteAllCookies();
 	    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	    

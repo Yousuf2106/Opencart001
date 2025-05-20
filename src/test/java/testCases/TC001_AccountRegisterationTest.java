@@ -17,16 +17,13 @@ public class TC001_AccountRegisterationTest extends BaseClass{
 		
 		try {
 		
-		HomePage hp=new HomePage(driver);
-		
+		HomePage hp=new HomePage(driver);//object for HomePage under pageObject
 		hp.clickMyAccount();
 		logger.info("*** Clicked on MyAccount link ***");
-		
 		hp.clickRegister();
 		logger.info("*** Clicked on Register link ***");
 		
 		AccountRegistrationPage regpage=new AccountRegistrationPage(driver);
-		
 		logger.info("*** Providing customer details ***");
 		regpage.setFirstName(randomeString().toUpperCase());
 		regpage.setLastName(randomeString().toUpperCase());
