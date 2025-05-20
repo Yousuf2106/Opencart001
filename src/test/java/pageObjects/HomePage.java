@@ -27,6 +27,9 @@ public class HomePage extends BasePage {
 	@FindBy(xpath="//i[@class='fa fa-search']")
 	WebElement btnSearch;
 	
+	@FindBy(xpath="//p[contains(text(),'There is no product that matches the search criter')]")
+	WebElement txtProductNotAvailable;
+	
 
 	public void clickMyAccount()
 	{
@@ -43,15 +46,25 @@ public class HomePage extends BasePage {
 		lnkLogin.click();
 	}
 	
-	public void searchBox()
+	public void searchBox(String product2)
 	{
-		txtSearchBox.sendKeys("Mac");
+		txtSearchBox.sendKeys(product2);
 	}
 	
 	public void clickSearch()
 	{
 		btnSearch.click();
-		
 	}
-
+	
+	public void productDisplayMsg()
+	{
+		
+	try {
+		if(txtProductNotAvailable.isDisplayed()) {
+			System.out.println("Product not available" + txtProductNotAvailable.getText() );
+			}
+		}catch(Exception e) {
+		 System.out.println("Product available");
+		}
+	}
 }

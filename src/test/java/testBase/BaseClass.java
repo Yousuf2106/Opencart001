@@ -31,7 +31,6 @@ public class BaseClass {
 	
 	public static WebDriver driver;
 	public Logger logger; //Log4j
-	
 	public Properties p;
 
 	@BeforeClass(groups= {"Sanity","Regression","Master"})

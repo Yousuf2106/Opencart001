@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-20T23:12:13 IST" name="MasterSuite" finished-at="2025-05-20T23:12:17 IST" duration-ms="3976">
+  <suite started-at="2025-05-21T01:21:56 IST" name="MasterSuite" finished-at="2025-05-21T01:22:12 IST" duration-ms="15657">
     <groups>
     </groups>
-    <test started-at="2025-05-20T23:12:13 IST" name="Test" finished-at="2025-05-20T23:12:17 IST" duration-ms="3976">
+    <test started-at="2025-05-21T01:21:56 IST" name="Test" finished-at="2025-05-21T01:22:12 IST" duration-ms="15657">
       <class name="testCases.TC004_SearchProduct">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC004_SearchProduct@4f9a2c08]" started-at="2025-05-20T23:12:13 IST" name="setup" finished-at="2025-05-20T23:12:16 IST" duration-ms="3299" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC004_SearchProduct@a87f8ec]" started-at="2025-05-21T01:21:56 IST" name="setup" finished-at="2025-05-21T01:22:01 IST" duration-ms="4524" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,15 +23,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="searchProductName()[pri:0, instance:testCases.TC004_SearchProduct@4f9a2c08]" started-at="2025-05-20T23:12:16 IST" name="searchProductName" finished-at="2025-05-20T23:12:17 IST" duration-ms="471" status="PASS">
+        <test-method signature="searchProductName()[pri:0, instance:testCases.TC004_SearchProduct@a87f8ec]" started-at="2025-05-21T01:22:01 IST" name="searchProductName" finished-at="2025-05-21T01:22:11 IST" duration-ms="10695" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchProductName -->
-        <test-method signature="verifyProductAvailability()[pri:0, instance:testCases.TC004_SearchProduct@4f9a2c08]" started-at="2025-05-20T23:12:17 IST" name="verifyProductAvailability" finished-at="2025-05-20T23:12:17 IST" duration-ms="11" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyProductAvailability -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC004_SearchProduct@4f9a2c08]" started-at="2025-05-20T23:12:17 IST" name="tearDown" finished-at="2025-05-20T23:12:17 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC004_SearchProduct@a87f8ec]" started-at="2025-05-21T01:22:11 IST" name="tearDown" finished-at="2025-05-21T01:22:12 IST" duration-ms="273" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
